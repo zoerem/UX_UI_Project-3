@@ -56,6 +56,10 @@ p{
     font-weight: 500;
     margin: 1rem;
 }
+.right-nav p:hover{
+    color: slategray;
+    border-bottom: solid lightgray 2px;
+}
 
 /* BODY  */
 .hero{
@@ -78,6 +82,11 @@ p{
     max-height: 66px;
     min-height: 44px;
     min-width: 127px;
+    transition: all .2s ease-in-out;
+    /* box-shadow: 3px 1px 8px rgba( 0, 0, 0, 0.25);  --this image has a border round it, need a better one--*/
+}
+.left-hero img:hover{
+    transform: scale(1.05);
 }
 .right-hero{
     max-width: 44rem;
