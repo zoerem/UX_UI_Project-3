@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 /* TYPOGRAPHY */
 
 h1, h2, h3, h4, h5, h6 {
@@ -8,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 h1{
     font-size: 6em;
     font-weight: 900;
+    color: #1477AA;
 }
 
 h3{
@@ -18,6 +25,7 @@ h3{
 p, ul, li {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
+    color: #3E3E3E;
 }
 p{
     margin: 0;
@@ -26,6 +34,16 @@ p{
 
 /* COLORS */
 
+.dark-orange{
+    color: #C44801;
+}
+
+.dark-blue{
+    color: #1477AA;
+}
+.light-orange{
+    color: #EF8100;
+}
 
 
 /* NAVBAR */
@@ -56,10 +74,11 @@ p{
 .right-nav p{
     font-weight: 500;
     margin: 1rem;
+    color: #1477AA;
 }
 .right-nav p:hover{
-    color: slategray;
-    border-bottom: solid lightgray 2px;
+    color: #EF8100;
+    border-bottom: solid #36B3BE 2px;
 }
 
 /* BODY  */
