@@ -26,10 +26,7 @@ p, ul, li {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     color: #3E3E3E;
-}
-p{
-    margin: 0;
-    padding: 0;
+    line-height: 145%;
 }
 
 /* COLORS */
@@ -112,12 +109,17 @@ p{
     max-width: 44rem;
 
 }
+.textbox{
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem 2rem;
+    margin: 0 12.8%;
+}
 
 .strip1{
-    /* background-image: ;    replace bg-color with grey image from hi-fi
+    background-image: url("../images/Diagonal-Back.png"); 
     background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: lightgray;
+    background-size: cover;
     padding: 8.5rem 0;
 }
 .strip1-h3{
@@ -128,57 +130,70 @@ p{
     max-width: 734px;
     margin: 0 auto;
 }
-.strip1-p p{
-    line-height: 135%;
-    margin-top: 1rem;
-}
 
 .strip2{
     display: flex;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    /* background-image: ;    replace bg-color with grey image from hi-fi
-    background-repeat: no-repeat;
-    background-size: cover; */
+    justify-content: space-between;
 }
-/* .left-strip img{   
-    there's 4px of space here and it's annoying. I think it's b/c image is that height so when actual image, make big so it can grow
-} */
 
 .right-strip{
-    margin: 6.5rem 0 6.5rem;
+    margin: 0 0 0 -6rem;
+    padding-right: 2.5rem;
+}
+.right-strip h3{
+    padding: 2.5rem 1.5rem 0 0;
 }
 .right-strip ul{
-    margin-top: 1.5rem;
+    padding: 0 1.5rem;
 }
 .right-strip li{
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+}
+.left-strip{
+    width: 60vw;
+    align-self:center;
 }
 
-/* .left-strip{       put image as background here so it fills space
-    background-image:
-} */
-
 .strip3{
-    /* background-image: ;    replace bg-color with grey image from hi-fi
+    background-image: url("../images/Diagonal-Back.png"); 
     background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: lightgray;
+    background-size: cover;
+    padding: 4rem 0; 
+    margin-top: -0.5rem;
+}
+
+.strip3 .textbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0; 
 }
+
 .strip3 img{
-    margin-top: 6.5rem;
     max-width: 72px;
     max-height: 62px;
 }
 .strip3 p{
     text-align: center;
-    margin: 2rem 0 6.5rem;
+    margin: 2rem 0;
+    max-width: 690px;
+    padding: 0 2rem;
 }
 footer{
     padding-top: 2rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .strip2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .right-strip{
+        margin: 2.5rem 0 1.5rem;
+        padding: 0;
+    }
+    .left-strip{
+        width:100vw;
+    }
 }
