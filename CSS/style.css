@@ -194,12 +194,11 @@ p, ul, li {
     }
     .right-strip{
         margin: 2.5rem 0 1.5rem;
-        padding: 0 2.5rem;
+        padding: 0 4.5rem;
     }
     .left-strip{
         width:100vw;
     }
-
 
     .hero{
         flex-direction: column-reverse;
