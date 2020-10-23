@@ -1,5 +1,5 @@
 
-# TEAM VOTE 
+# VoteReady: mobile app 
 ### Group 2 Contributors
 
 * Zoe Rem
